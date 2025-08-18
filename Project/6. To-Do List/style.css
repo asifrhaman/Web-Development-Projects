@@ -1,0 +1,66 @@
+/* Goal → Create dynamic elements and store data locally.
+Focus → Adding/removing DOM elements, saving data. */
+
+/* 4.	To-Do List
+o	Add/remove tasks.
+o	Save tasks in localStorage. */
+
+body{
+    background-color: white;
+}
+h2{
+    font-family: "Montserrat", sans-serif;
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+}
+#frame{
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    margin: 50px 50px 0 450px;
+    text-align: center;
+    height: 420px;
+    width: 300px;
+    border-radius: 15px; 
+    background-color: beige;
+}
+#plus{
+    border-radius: 10px;
+    border: none;
+    background-color: beige;
+}
+#taskList{
+    text-align: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#plus:hover{
+    display: inline-block;
+    background-color: rgb(212, 113, 33);
+    transition: 0.5s;
+    font-size: 15px;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 50px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#textInput{
+    border-radius: 10px;
+    border: none;
+    background-color: #f8f6f6;
+    height: 25px;
+    width: 200px;
+}
+#radio{
+    font-weight: 60px;
+    padding-right: 80px;
+}
+#cross:hover{
+    transition: 0.5s;
+    color:red;
+    font-size: 15px;
+}
+#cross{
+    border-radius: 400px;
+    border: none;
+    background-color: beige;
+    padding-left: 140px;
+}

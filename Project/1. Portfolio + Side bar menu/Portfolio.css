@@ -1,0 +1,114 @@
+
+h1{
+    color: rgb(99, 109, 22);
+    text-decoration: darkgrey;
+    text-shadow: blueviolet;
+}
+
+action:hover{
+    color: aqua;
+    background-color: rgb(179, 201, 18);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+
+img{
+    height: 120px;
+    width: 120px;
+    border: 2px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 8px rgb(225, 157, 11);
+
+}
+
+img:hover{
+    transition: 1s;
+    background-color:teal;
+}
+
+#live {
+  position: fixed;
+  bottom: 20px;
+  right: 3px;
+  background: linear-gradient(45deg, #28a745, #218838);
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1000;
+}
+
+#live:hover {
+  background: linear-gradient(360deg, #1e7e34, #155724);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+.chat-icon {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  font-weight: bold;
+  color: #28a745;
+  line-height: 20px;
+  font-size: 14px;
+}
+.animations{
+    animation-name: contactAnimation;
+    animation-duration: 2s;
+    animation-delay: 0;
+    /* animation-iteration-count:; */
+    animation-direction: alternate;
+}
+@keyframes contactAnimation {
+    from{
+        font-size: 30px;
+        color: blueviolet;
+    } to{
+        font-size: 15px;
+        color: aqua;
+    }
+}
+.main {
+  background-image: url("portBGimage.jpg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh;
+  width: 100%;
+  justify-content: left;
+  padding: 40px; /* space around content */
+}
+
+.left-content {
+  display: flex;
+  flex-direction: column; /* vertical layout */
+  align-items: flex-start; /* align text to left */
+  gap: 20px; /* space between items */
+  color: white;
+}
+
+ul li a i {
+  margin-left: 5px;
+}
+
+ul li a:hover {
+  color: #0a66c2; /* LinkedIn blue */
+}

@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.btn {
+    height: 200px;
+    width: 200px;
+    border-radius: 20%;
+    border: 10px solid black;
+    margin: 1rem;
+    cursor: pointer;
+}
+
+.btn-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line-one, .line-two {
+    display: flex;
+}
+
+.red { background-color: #d95980; }
+.green { background-color: #63aac0; }
+.yellow { background-color: #f99b45; }
+.purple { background-color: #819ff9; }
+
+.flash { background-color: white !important; }
+.userFlash { background-color: lightgreen !important; }
